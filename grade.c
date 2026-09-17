@@ -1,22 +1,31 @@
 #include <stdio.h>
 
-  int main() {
-    //declare the given first
-    int grade;
-    int score range;
-    char A, B, C, D, F;
-    
-//input: ask the user for the input, which is grade
+int main() {
+
+    // INPUT: Declare a variable and ask the user to enter their score.
+    int score;
+
     printf("Enter your score: ");
-    scanf("%i" ,&grade);
-    
-    if (grade <= 100) {
-      printf("A\n");
-    } else {
-      
+    scanf("%d", &score);
 
 
-//process: determine what letter grade is the input
+    // PROCESS: Check the score and determine its letter grade.
+      if (score >= 90) {
+        printf("Grade: A\n");
+    }
+        else if (score >= 80) {
+          printf("Grade: B\n");
+    }
+        else if (score >= 70) {
+          printf("Grade: C\n");
+    }
+        else if (score >= 60) {
+          printf("Grade: D\n");
+    }
+        else {
+          printf("Grade: F\n");
+    }
+    // OUTPUT: Display the letter grade equivalent of the score.
 
-
-//output: display letter grade
+      return 0;
+}
